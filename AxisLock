@@ -1,0 +1,14 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AxisLock : MonoBehaviour {
+
+	void Update ()
+    {
+        Vector3 pos = transform.position;
+//Axis can be x,y or z -- Fixed value can be any integer.
+        pos.z = 5;
+        transform.position = pos;
+    }
+}
